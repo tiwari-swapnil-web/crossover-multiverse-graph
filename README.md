@@ -75,8 +75,8 @@ Hubs vs. Bridges: While franchises like James Bond have high raw connection coun
 # 🚀 Quick Start Guide
 ## 1. Installation & Environment Setup
 ```PowerShell
-git clone [https://github.com/your-username/crossover-map.git](https://github.com/your-username/crossover-map.git)
-cd crossover-map
+git clone [https://github.com/tiwari-swapnil-web/crossover-multiverse-graph.git](https://github.com/tiwari-swapnil-web/crossover-multiverse-graph.git)
+cd crossover-multiverse-graph
 
 # Create and activate virtual environment
 python -m venv venv
