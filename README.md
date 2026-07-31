@@ -47,7 +47,7 @@ The project originated as a sequential, file-based batch pipeline:
 The V1 scripts have been modularized and extended into a dual-engine architecture:
 
 ```text
-Crossover Map/
+crossover-multiverse-graph/
 ├── data/
 │   └── crossovers.db          # SQLite relational database
 │
