@@ -64,7 +64,7 @@ Crossover Map/
 ├── pipeline.py                 # CLI Execution Engine (--mode v1-seed / --mode v2-stream)
 ├── requirements.txt            # Python dependencies
 └── README.md                   # Project documentation
-
+```
 
 
 # 📊 Key Empirical Findings
@@ -74,8 +74,7 @@ Hubs vs. Bridges: While franchises like James Bond have high raw connection coun
 
 # 🚀 Quick Start Guide
 ## 1. Installation & Environment Setup
-PowerShell
-```text
+```PowerShell
 git clone [https://github.com/your-username/crossover-map.git](https://github.com/your-username/crossover-map.git)
 cd crossover-map
 
@@ -85,18 +84,18 @@ python -m venv venv
 
 # Install dependencies
 pip install -r requirements.txt
+```
 ## 2. Ingest Data
 Seed the local database using the V1 offline engine or stream live via V2:
 
-PowerShell
-```text
+```PowerShell
 # Run V1 Seed
 python pipeline.py --mode v1-seed
 
 # Stream live API entries
-```text
 python pipeline.py --mode v2-stream --limit 20
+```
+
 ## 3. Launch the 3D Web Dashboard
-```text
-PowerShell
+```PowerShell
 streamlit run app.py
