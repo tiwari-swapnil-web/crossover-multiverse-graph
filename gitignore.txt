@@ -1,12 +1,20 @@
-# Python bytecode & caches
+# Python bytecode & cache
 __pycache__/
-*.pyc
+*.py[cod]
+*$py.class
 
-# Environment files
-.env
+# Virtual environments
 venv/
-.venv/
+env/
+ENV/
 
-# OS metadata files
+# Database files (optional: keep if you want to ship seed DB, ignore if regenerated)
+*.sqlite3
+*.db-journal
+
+# Streamlit local settings
+.streamlit/
+
+# OS metadata
 .DS_Store
 Thumbs.db

@@ -1,7 +1,17 @@
 import sqlite3
+import os
+
+# Point to active V2 database path
+DB_PATH = os.path.join(os.path.dirname(__file__), '..', 'data', 'crossovers.db')
+
+def get_db_connection():
+    if not os.path.exists(DB_PATH):
+        raise FileNotFoundError(f"Database not found at {DB_PATH}. Run pipeline.py first to build the dataset!")
+    return sqlite3.connect(DB_PATH)
+
 
 def find_top_hubs():
-    conn = sqlite3.connect('crossovers.db')
+    conn = sqlite3.connect(DB_PATH)
     cursor = conn.cursor()
 
     # Query to count connections per franchise
